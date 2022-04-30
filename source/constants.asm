@@ -11,10 +11,13 @@ section .data
     stdin equ 0
     stdout equ 1
 
+    mystery_number equ 50 ; TODO: Generate a random mystery number
+
     prompt_message: db "Number : "
     won_message: db "You won !", 10
     more_message: db "More", 10
     less_message: db "Less", 10
+    error_message: db "Not a number", 10
 
 %endif
 
