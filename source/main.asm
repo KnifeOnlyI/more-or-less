@@ -10,7 +10,8 @@ global _start
 
 section .text
 
-_start:   
+_start:
+    call input_str
     call print_won_message
     call print_more_message
     call print_less_message
