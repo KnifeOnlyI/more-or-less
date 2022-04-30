@@ -11,10 +11,9 @@ global _start
 section .text
 
 _start:   
-    mov rax, message
-    mov rdi, 14
-    call print_message
-
+    call print_won_message
+    call print_more_message
+    call print_less_message
     call exit
 
 %endif

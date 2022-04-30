@@ -26,6 +26,45 @@ print_message:
 
     ret
 
+print_won_message:
+    push rax
+    push rdi
+
+    mov rax, won_message
+    mov rdi, 10
+    call print_message
+
+    pop rax
+    pop rdi
+
+    ret
+
+print_more_message:
+    push rax
+    push rdi
+
+    mov rax, more_message
+    mov rdi, 5
+    call print_message
+
+    pop rax
+    pop rdi
+
+    ret
+
+print_less_message:
+    push rax
+    push rdi
+
+    mov rax, less_message
+    mov rdi, 5
+    call print_message
+
+    pop rax
+    pop rdi
+
+    ret
+
 exit:
     push rax
     push rdi

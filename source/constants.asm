@@ -9,7 +9,9 @@ section .data
     sys_exit equ 60
     stdout equ 1
 
-    message: db "Hello World !", 10
+    won_message: db "You won !", 10
+    more_message: db "More", 10
+    less_message: db "Less", 10
 
 %endif
 
